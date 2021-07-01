@@ -6,7 +6,7 @@
 }
 
 /* common */
-.clearfix {
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
@@ -16,6 +16,10 @@
 }
 .float-right {
     float: right;
+}
+.container {
+    width: 70%;
+    margin: auto;
 }
 /* buttons */
 .btn {
@@ -54,7 +58,7 @@ header nav ul li a {
     text-decoration: none;
     color: black;
 }
-header nav.float-right ul li {
+.header-right nav ul li {
     margin: 0 30px 0 0;
 }
 header .start {
@@ -62,6 +66,7 @@ header .start {
 }
 
 /* corpo */
+/* hero */
 .hero {
     height: 740px;
     background-color: #b4d0e7;
@@ -82,11 +87,11 @@ header .start {
     width: calc(40% - 90px);
     margin-right: 90px;
 }
-.hero-body .caption p:first-child {
-    margin-bottom: 25px;
+.hero-body .caption p:nth-child(3) {
+    font-size: 90%;
 }
 .hero-body .caption .free-trial {
-    margin-bottom: 10px;
+    margin: 25px 0 10px 0;
 }
 .hero-body .caption i {
     font-size: 40px;
@@ -97,4 +102,14 @@ header .start {
 }
 .hero-img img {
     width: 100%;
+}
+/* tariffs */
+.tariffs .container {
+    margin-top: 180px;
+}
+.tariffs .container h2 {
+    font-size: 40px;
+}
+.tariffs .container .annual-monthly {
+    margin: 70px 0 40px;
 }
