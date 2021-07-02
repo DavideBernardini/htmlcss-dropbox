@@ -30,10 +30,15 @@
     color: #fff;
     text-decoration: none;
 }
-
 /* typo */
 body {
     font-family: 'Open Sans', sans-serif;
+}
+.title-section {
+    font-size: 40px;
+}
+.sub-title-section {
+    font-size: 25px;
 }
 
 /* intestazione */
@@ -105,9 +110,6 @@ header .start {
 .tariffs {
     margin-top: 180px;
 }
-.tariffs h2 {
-    font-size: 40px;
-}
 /* radio */
 .tariffs .annual-monthly {
     margin: 70px 0 40px 0;
@@ -120,66 +122,62 @@ header .start {
     width: calc(100% / 3 - 40px);
     min-height: 1250px;
 }
-.col {
+.tariffs .col {
     border: 1px solid #d4d4d7;
 }
-.col.middle {
+.tariffs .col.middle {
     margin: 0 60px 0;
 }
-.col-header {
+.tariffs .col .col-header {
     text-align: center;
     padding: 10px 0 10px 0;
     border-bottom: 1px solid #d4d4d7;
 }
-.col-header h5 {
+.tarbuisness .col-header h5 {
     font-size: 18px;
 }
 .col-container {
     margin: auto;
     margin: 20px 30px 0 30px;
 }
-
-.col h3 {
-    font-size: 25px;
-}
-.col .price {
+.tariffs .col .price {
     font-weight: bold;
     margin: 20px 0 10px 0;
     font-size: 18px;
 }
-.col .price-info {
+.tariffs .col .price-info {
     color: #788691;
 }
-.col .plan-benefits-list {
+.tariffs .col .plan-benefits-list {
     list-style: none;
 }
-.col .plan-benefits-list .user-number {
+.tariffs .col .plan-benefits-list .user-number {
     margin: 60px 0 40px 0;
 }
-.col .plan-benefits-list .archive-space {
+.tariffs .col .plan-benefits-list .archive-space {
     margin-bottom: 35px;
 }
-.col .btn.trial {
+.tariffs .col .btn.trial {
     width: 100%;
     text-align: center;
     margin: 55px 0 35px 0;
 }
-.col .buy-now a {
+.tariffs .col .buy-now a {
     color: #166eff;
 }
-.col .buy-now span {
+.tariffs .col .buy-now span {
     padding-bottom: 35px;
     border-bottom: 1px solid #d9d9dc;
 }
-.col .list-title {
+.tariffs .col .list-title {
     margin: 80px 0 35px 0;
     font-size: 18px;
 }
-.col .list-main-features {
+.tariffs .col .list-main-features {
     list-style: none;
     padding-left: 20px;
 }
-.col .list-main-features li {
+.tariffs .col .list-main-features li {
     margin-bottom: 35px;
 }
 .list-main-features li::before {
@@ -220,7 +218,7 @@ header .start {
     margin: 50px 0 0 50px;
 }
 .partner .caption h3 {
-    font-size: 25px;
+    font-size: 28px;
 }
 .partner .caption p {
     margin: 45px 0 35px 0;
@@ -230,3 +228,29 @@ header .start {
     background-color: white;
     border: 1px solid black;
 }
+/* sezione operazioni */
+.buisness {
+    margin-top: 120px;
+}
+.buisness .title-section {
+    margin-bottom: 80px;
+}
+.buisness .sub-title-section {
+    margin: 15px 0 30px 0;
+}
+.buisness .row .column {
+    width: calc(100% / 3 - 160px / 3);
+}
+.buisness .row .column.middle {
+    margin: 0 80px 0 80px;
+}
+.column .buisness-img img {
+    width: 100%;
+}
+.column p span {
+    text-decoration: underline;
+}
+.buisness .row:nth-child(2) {
+    margin-bottom: 125px;
+}
+
