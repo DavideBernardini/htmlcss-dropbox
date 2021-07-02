@@ -6,7 +6,7 @@
 }
 
 /* common */
-.clearfix::after {
+.clearfix:after {
   content: "";
   clear: both;
   display: table;
@@ -34,7 +34,6 @@
 /* typo */
 body {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
 }
 
 /* intestazione */
@@ -68,14 +67,13 @@ header .start {
 /* corpo */
 /* hero */
 .hero {
-    height: 740px;
+    padding-top: 80px;
     background-color: #b4d0e7;
 }
 .hero-container {
     margin: auto;
     width: 80%;
-    position: relative;
-    top: 150px;
+    transform: translate(0, 70px);
 }
 .hero-container h1 {
     font-size: 70px;
@@ -84,8 +82,7 @@ header .start {
     margin-top: 30px;
 }
 .hero-body .caption {
-    width: calc(40% - 90px);
-    margin-right: 90px;
+    width: 30%;
 }
 .hero-body .caption p:nth-child(3) {
     font-size: 90%;
@@ -98,18 +95,89 @@ header .start {
     margin-top: 30px;
 }
 .hero-img {
-    width: 60%;
+    width: calc(70% - 80px);
+    margin-left: 70px;
 }
 .hero-img img {
     width: 100%;
 }
 /* tariffs */
-.tariffs .container {
+.tariffs {
     margin-top: 180px;
 }
-.tariffs .container h2 {
+.tariffs h2 {
     font-size: 40px;
 }
-.tariffs .container .annual-monthly {
-    margin: 70px 0 40px;
+/* radio */
+.tariffs .annual-monthly {
+    margin: 70px 0 40px 0;
 }
+.annual-monthly label[for=monthly] {
+    margin-right: 15px;
+}
+
+/* colonne */
+.tariffs .columns-plans .col {
+    width: calc(100% / 3 - 40px);
+    border: 1px solid #d4d4d7;
+}
+.col.middle {
+    margin: 0 60px 0;
+}
+.columns-plans .col-header {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #d4d4d7;
+}
+.col-header h5 {
+    font-size: 18px;
+}
+.col-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.col-container h3 {
+    font-size: 25px;
+}
+.col-container .price {
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+.col-container .price-info {
+    color: #788691;
+}
+.col-container .user-number {
+    margin: 60px 0 40px 0;
+}
+.col-container .archive-space {
+    margin-bottom: 35px;
+}
+.col-container .btn.trial {
+    width: 100%;
+    text-align: center;
+    margin: 55px 0 35px 0;
+}
+.col-container .buy-now a {
+    color: #166eff;
+}
+.col-container .buy-now span {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d9d9dc;
+}
+.col-container .list-title {
+    margin: 80px 0 35px 0;
+    font-size: 18px;
+}
+.col-container .list-main-features {
+    list-style: none;
+}
+.col-container .list-main-features li {
+    margin-bottom: 35px;
+}
+.list-main-features li::before {
+    font-family: 'Font Awesome 5 free';
+    content: "f00c";
+}
+
