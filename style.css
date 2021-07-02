@@ -46,7 +46,7 @@ header {
     width: 100%;
 }
 header .logo-img img {
-    vertical-align: middle;
+    vertical-align: text-bottom;
     padding-left: 15px;
 }
 header nav ul li {
@@ -115,17 +115,18 @@ header .start {
 .annual-monthly label[for=monthly] {
     margin-right: 15px;
 }
-
 /* colonne */
 .tariffs .columns-plans .col {
     width: calc(100% / 3 - 40px);
-    border: 1px solid #d4d4d7;
     min-height: 1250px;
+}
+.col {
+    border: 1px solid #d4d4d7;
 }
 .col.middle {
     margin: 0 60px 0;
 }
-.columns-plans .col-header {
+.col-header {
     text-align: center;
     padding: 10px 0 10px 0;
     border-bottom: 1px solid #d4d4d7;
@@ -134,48 +135,51 @@ header .start {
     font-size: 18px;
 }
 .col-container {
-    width: 80%;
     margin: auto;
-    margin-top: 20px;
+    margin: 20px 30px 0 30px;
 }
 
-.col-container h3 {
+.col h3 {
     font-size: 25px;
 }
-.col-container .price {
+.col .price {
     font-weight: bold;
-    margin: 15px 0 10px 0;
+    margin: 20px 0 10px 0;
+    font-size: 18px;
 }
-.col-container .plan-benefits-list .price-info {
+.col .price-info {
     color: #788691;
 }
-.col-container .plan-benefits-list .user-number {
+.col .plan-benefits-list {
+    list-style: none;
+}
+.col .plan-benefits-list .user-number {
     margin: 60px 0 40px 0;
 }
-.col-container .plan-benefits-list .archive-space {
+.col .plan-benefits-list .archive-space {
     margin-bottom: 35px;
 }
-.col-container .btn.trial {
+.col .btn.trial {
     width: 100%;
     text-align: center;
     margin: 55px 0 35px 0;
 }
-.col-container .buy-now a {
+.col .buy-now a {
     color: #166eff;
 }
-.col-container .buy-now span {
+.col .buy-now span {
     padding-bottom: 35px;
     border-bottom: 1px solid #d9d9dc;
 }
-.col-container .list-title {
+.col .list-title {
     margin: 80px 0 35px 0;
     font-size: 18px;
 }
-.col-container .list-main-features {
+.col .list-main-features {
     list-style: none;
     padding-left: 20px;
 }
-.col-container .list-main-features li {
+.col .list-main-features li {
     margin-bottom: 35px;
 }
 .list-main-features li::before {
@@ -185,5 +189,19 @@ header .start {
     font-weight: 900;
     margin-left: -20px;
     color: #0061ff;
+}
+/* piano imprese */
+.tariffs .enterprise-plan {
+    margin-top: 50px;
+    position: relative;
+}
+.enterprise-plan p {
+    margin: 40px 0 35px 0;
+}
+.enterprise-plan .btn {
+    position: absolute;
+    top: 75px;
+    right: 30px;
+    padding: 8px 70px;
 }
 
