@@ -120,6 +120,7 @@ header .start {
 .tariffs .columns-plans .col {
     width: calc(100% / 3 - 40px);
     border: 1px solid #d4d4d7;
+    min-height: 1250px;
 }
 .col.middle {
     margin: 0 60px 0;
@@ -145,13 +146,13 @@ header .start {
     font-weight: bold;
     margin: 15px 0 10px 0;
 }
-.col-container .price-info {
+.col-container .plan-benefits-list .price-info {
     color: #788691;
 }
-.col-container .user-number {
+.col-container .plan-benefits-list .user-number {
     margin: 60px 0 40px 0;
 }
-.col-container .archive-space {
+.col-container .plan-benefits-list .archive-space {
     margin-bottom: 35px;
 }
 .col-container .btn.trial {
@@ -172,12 +173,17 @@ header .start {
 }
 .col-container .list-main-features {
     list-style: none;
+    padding-left: 20px;
 }
 .col-container .list-main-features li {
     margin-bottom: 35px;
 }
 .list-main-features li::before {
     font-family: 'Font Awesome 5 free';
-    content: "f00c";
+    content: "\f00c";
+    display: inline-block;
+    font-weight: 900;
+    margin-left: -20px;
+    color: #0061ff;
 }
 
