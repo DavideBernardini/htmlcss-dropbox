@@ -205,3 +205,28 @@ header .start {
     padding: 8px 70px;
 }
 
+/* sezione partner */
+.partner {
+    margin-top: 150px;
+}
+.partner .img img {
+    width: 100%;
+}
+.partner .img {
+    width: 55%;
+}
+.partner .caption {
+    width: calc(45% - 50px);
+    margin: 50px 0 0 50px;
+}
+.partner .caption h3 {
+    font-size: 25px;
+}
+.partner .caption p {
+    margin: 45px 0 35px 0;
+}
+.partner .btn {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
