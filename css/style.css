@@ -21,6 +21,12 @@
     width: 70%;
     margin: auto;
 }
+.transform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* buttons */
 .btn {
     display: inline-block;
@@ -228,6 +234,7 @@ header .start {
     background-color: white;
     border: 1px solid black;
 }
+
 /* sezione operazioni */
 .buisness {
     margin-top: 120px;
@@ -253,4 +260,102 @@ header .start {
 .buisness .row:nth-child(2) {
     margin-bottom: 125px;
 }
+
+/* sezione team */
+.team {
+    margin-top: 220px;
+}
+.team-header a {
+    color: #0061ff;
+    display: inline-block;
+    margin: 50px 0 50px 0;
+}
+/* colonne laterali */
+.row-team .col-team {
+    width: 30%;
+}
+.row-team .col-team.middle {
+    width: 40%;
+}
+.col-team .row .col {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+.col-team .row .col img {
+    width: 50%;
+}
+.col.designit {
+    background-color: #d0e9cd;
+}
+.col.designit .box-for-border {
+    background-color: #a2d39b;
+    height: 90%;
+    width: 90%;
+    position: absolute;
+}
+.col.asu {
+    background-color: #61082b;
+}
+.col.uf {
+    background-color: #0093ce;
+}
+.col.topps {
+    background-color: #ff1c1c;
+}
+.col.wbr {
+    background-color: #d5001f;
+}
+.col.hearts {
+    background-color: #b4d0e7;
+}
+.col.lonelyplanet {
+    background-color: #0d2481;
+}
+.col.clearchannel {
+    background-color: #ffd830;
+}
+/* colonna centrale */
+/* soluzione brutta */
+.row-team .col-team.middle {
+    background-color: #f5f5f5;
+    height: 493.861px;
+}
+.container-col-team {
+    margin: 50px 50px 0 50px;
+}
+.col-team.middle .logo-img-designit {
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+.col-team.middle hr {
+    width: 50px;
+}
+.col-team.middle p {
+    margin: 60px 0 60px 0;
+}
+
+/* sezione call to action */
+.call-to-action {
+    background-color: #b4d0e7;
+}
+.call-to-action .container {
+    padding: 125px 0 125px 0;
+}
+.cta-text, .cta-btn {
+    width: 50%;
+}
+.cta-text .title-section {
+    color: #61082b;
+}
+.cta-btn .btn {
+    background-color: white;
+    color: black;
+    padding: 8px 60px 8px 60px;
+}
+.cta-btn {
+    text-align: right;
+}
+
 
