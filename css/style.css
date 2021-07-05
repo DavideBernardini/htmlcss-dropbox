@@ -74,7 +74,6 @@ header nav ul li a {
 header .start {
     padding-right: 15px;
 }
-
 /* corpo */
 /* hero */
 .hero {
@@ -365,18 +364,24 @@ header .start {
 .faq .title-section {
     margin-bottom: 60px;
 }
-.faq .row {
+.faq ul {
+    list-style: none;
+}
+.faq li {
     padding: 40px 0 40px 0;
     border-top: 1px solid #d4d4d7;
     font-weight: bold;
 }
-.faq .row:last-child {
+.faq li:last-child {
     border-bottom: 1px solid #d4d4d7;
 }
-.faq .row span.float-right i {
+.faq li span.float-right i {
     font-size: 22px;
     vertical-align: text-top;
+    margin-right: 40px;
 }
+
+/* footer */
 footer {
     background-color: #08090e;
     margin-top: 125px;
@@ -387,15 +392,19 @@ footer {
     padding-top: 110px;
 }
 footer nav {
-    color: white;
     margin-bottom: 110px;
 }
 footer nav .col .sub-title-section {
     margin-bottom: 35px;
+    color: white;
 }
 footer nav .col ul {
     list-style: none;
     line-height: 2.2;
+}
+footer nav .col ul li a {
+    text-decoration: none;
+    color: white;
 }
 footer nav .col {
     width: calc(100% / 5 - 80px);
