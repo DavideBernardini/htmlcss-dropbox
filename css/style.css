@@ -36,6 +36,10 @@
     color: #fff;
     text-decoration: none;
 }
+.hero-footer-container {
+    margin: auto;
+    width: 80%;
+}
 /* typo */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -80,12 +84,10 @@ header .start {
     padding-top: 80px;
     background-color: #b4d0e7;
 }
-.hero-container {
-    margin: auto;
-    width: 80%;
+.hero .hero-footer-container {
     transform: translate(0, 70px);
 }
-.hero-container h1 {
+.hero-footer-container h1 {
     font-size: 70px;
 }
 .hero-body {
@@ -137,6 +139,9 @@ header .start {
     text-align: center;
     padding: 10px 0 10px 0;
     border-bottom: 1px solid #d4d4d7;
+}
+.col-header h5 {
+    font-size: 16px;
 }
 .tarbuisness .col-header h5 {
     font-size: 18px;
@@ -281,35 +286,62 @@ header .start {
 .col-team .row .col img {
     width: 50%;
 }
+.box-for-border {
+    height: 100%;
+    width: 100%;
+}
+.col:hover .box-for-border {
+    width: 92%;
+    height: 92%;
+}
 .col.designit {
-    background-color: #d0e9cd;
+    background-color: rgba(162, 211, 155, 0.5);
 }
 .col.designit .box-for-border {
-    background-color: #a2d39b;
-    height: 90%;
-    width: 90%;
-    position: absolute;
+    background-color: rgb(162, 211, 155);
+    
 }
 .col.asu {
-    background-color: #61082b;
+    background-color: rgba(97, 8, 43, 0.5);
+}
+.col.asu .box-for-border {
+    background-color: rgb(97, 8, 43);
 }
 .col.uf {
-    background-color: #0093ce;
+    background-color: rgba(0, 147, 206, 0.5);
+}
+.col.uf .box-for-border {
+    background-color: rgb(0, 147, 206);
 }
 .col.topps {
-    background-color: #ff1c1c;
+    background-color: rgba(255, 28, 28, 0.5);
+}
+.col.topps .box-for-border {
+    background-color: rgb(255, 28, 28);
 }
 .col.wbr {
-    background-color: #d5001f;
+    background-color: rgba(213, 0, 31, 0.5);
+}
+.col.wbr .box-for-border {
+    background-color: rgb(213, 0, 31);
 }
 .col.hearts {
-    background-color: #b4d0e7;
+    background-color: rgba(180, 208, 231, 0.5);
+}
+.col.hearts .box-for-border {
+    background-color: rgb(180, 208, 231);
 }
 .col.lonelyplanet {
-    background-color: #0d2481;
+    background-color: rgba(13, 36, 129, 0.5);
+}
+.col.lonelyplanet .box-for-border {
+    background-color: rgb(13, 36, 129);
 }
 .col.clearchannel {
-    background-color: #ffd830;
+    background-color: rgba(255, 216, 48, 0.5);
+}
+.col.clearchannel .box-for-border {
+    background-color: rgb(255, 216, 48);
 }
 /* colonna centrale */
 .row-team .col-team.middle {
@@ -386,50 +418,45 @@ footer {
     background-color: #08090e;
     margin-top: 125px;
 }
-.footer-container {
-    width: 80%;
-    margin: auto;
+footer .hero-footer-container {
     padding-top: 110px;
 }
-footer nav {
+.footer-top nav {
     margin-bottom: 110px;
 }
-footer nav .col .sub-title-section {
+.footer-top nav .col .sub-title-section {
     margin-bottom: 35px;
     color: white;
 }
-footer nav .col ul {
+.footer-top nav .col ul {
     list-style: none;
     line-height: 2.2;
 }
-footer nav .col ul li a {
+.footer-top nav .col ul li a {
     text-decoration: none;
     color: white;
 }
-footer nav .col {
+.footer-top nav .col {
     width: calc(100% / 5 - 80px);
 }
-footer nav .col:nth-child(even) {
+.footer-top nav .col:nth-child(even) {
     margin: 0 100px;
 }
 footer hr {
     width: 110px;
     background-color: white;
 }
-footer .language-choice {
+.footer-bottom .language-choice {
     color: #999999;
     padding: 55px 0 45px 0;
 }
 .language-choice .fa-globe-europe {
     font-size: 18spx;
 }
-footer .language-choice select {
+.footer-bottom .language-choice select {
     border: none;
     background-color: #08090e;
     color: #999999;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
     appearance: none;   
 }
 
